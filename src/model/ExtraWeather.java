@@ -2,13 +2,13 @@ package model;
 
 import java.util.ArrayList;
 
-public class ExtraWeather extends BasicWeather{
+public class ExtraWeather extends BasicWeather {
     private ArrayList<String> cloud;
     private ArrayList<String> airPressure;
     private ArrayList<String> vision;
     private ArrayList<String> dayTime;
 
-    public ExtraWeather(ArrayList<String> dayTime,ArrayList<String> temperature,ArrayList<String> outdoorWeather,ArrayList<String> humidity,ArrayList<String> wind,ArrayList<String> cloud,ArrayList<String> airPressure,ArrayList<String> vision) {
+    public ExtraWeather(ArrayList<String> dayTime, ArrayList<String> temperature, ArrayList<String> outdoorWeather, ArrayList<String> humidity, ArrayList<String> wind, ArrayList<String> cloud, ArrayList<String> airPressure, ArrayList<String> vision) {
         super(temperature, outdoorWeather, humidity, wind);
         this.cloud = cloud;
         this.airPressure = airPressure;
@@ -16,7 +16,7 @@ public class ExtraWeather extends BasicWeather{
         this.dayTime = dayTime;
     }
 
-    public ExtraWeather(ArrayList<String> dayTime,ArrayList<String> cloud,ArrayList<String> airPressure,ArrayList<String> vision) {
+    public ExtraWeather(ArrayList<String> dayTime, ArrayList<String> cloud, ArrayList<String> airPressure, ArrayList<String> vision) {
         this.cloud = cloud;
         this.airPressure = airPressure;
         this.vision = vision;
@@ -46,7 +46,7 @@ public class ExtraWeather extends BasicWeather{
         return airPressure;
     }
 
-    public void setAirPressure(ArrayList<String>airPressure) {
+    public void setAirPressure(ArrayList<String> airPressure) {
         this.airPressure = airPressure;
     }
 
@@ -63,7 +63,7 @@ public class ExtraWeather extends BasicWeather{
         return "ExtraWeather{" +
                 " dayTime=" + dayTime +
                 ", outdoorWeather=" + this.getOutdoorWeather() +
-                "temperature=" +this.getTemperature() +
+                "temperature=" + this.getTemperature() +
                 ", humidity=" + this.getHumidity() +
                 ", wind=" + this.getWind() +
                 "cloud=" + cloud +
